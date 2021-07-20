@@ -1,0 +1,67 @@
+
+/*Main section*/
+.cardSection {
+    
+    h1 {
+        text-align: center;
+        color: rgb(114, 228, 210);
+        background-color: rgba(61, 7, 125, 0.8);
+        margin-top: 30px;
+        margin-bottom: 50px;
+        border: 4px solid rgb(126, 22, 25);
+        border-radius: 5px;
+    }
+    .image {
+        img {
+            width: 100%;
+            border: 4px solid rgb(126, 22, 25);
+            border-radius: 10px;
+        }
+    }
+
+    .info {
+        padding-left: 30px;
+        padding-top: 50px;
+        background-color: rgba(61, 7, 125, 0.6);
+        border: 4px solid rgb(126, 22, 25);
+        border-radius: 10px;
+        .caracterPar {
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(114, 228, 210);
+            span {
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .info {
+        padding-left: 30px;
+        padding-top: 10px !important;
+
+        .caracterPar {
+            font-size: 16px !important;
+            font-weight: bold;
+            color: rgb(114, 228, 210);
+            span {
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    .mainSection {
+        .info {
+            width: 320px;
+            margin: 0px auto;
+        }
+
+        .image {
+            width: 320px;
+            margin: 0px auto;
+        }
+    }
+}
