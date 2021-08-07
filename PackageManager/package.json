@@ -1,0 +1,18 @@
+{
+  "name": "packagemanagerexercise",
+  "version": "1.0.0",
+  "description": "Exercise of Package Manager lesson",
+  "main": "packageManager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Predrag Belos <predragbelos@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay": "^1.5.0",
+    "figlet": "^1.5.0",
+    "funny-words": "^0.1.2",
+    "one-liner-joke": "^1.2.2",
+    "random-words": "^1.1.1"
+  }
+}
