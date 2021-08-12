@@ -1,10 +1,11 @@
-import { createHD } from '../Header/header';
+
+import { Header } from '../Header/header';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      {createHD()}
+      <Header />
     </div>
   );
 }

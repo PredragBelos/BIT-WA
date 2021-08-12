@@ -1,10 +1,13 @@
 import React from 'react';
+import './header.css';
 
-export let createHD = () => {
+
+/*Function for header on home page*/
+export let Header = () => {
     return(
-        <div>
-            <p>Proba</p>
-        </div>
+        <header>
+            <p className = "headerParagraph">My React Blog</p>
+        </header>
     );
 }
 
