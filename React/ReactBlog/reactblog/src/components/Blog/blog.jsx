@@ -1,15 +1,19 @@
 import React from 'react';
-import { blogs } from './blogData';
 import "./blog.css";
+import PropTypes from 'prop-types';
 
-export const Blog = () => {
-    let blog = blogs.map(item => {
-        return (
-            <div className="blog">
-                <p className="blogTitle">{item.title}</p>
-                <p className="blogText">{item.text}</p>
-            </div>
-        );
-    });
-    return blog;
+export const Blog = ({title, text}) => {
+
+    return (
+        <div className="blog">
+            <p className="blogTitle">{title}</p>
+            <p className="blogText">{text}</p>
+        </div>
+    );
 }
+
+Blog.propTypes = {
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired, 
+}
+
