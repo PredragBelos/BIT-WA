@@ -2,10 +2,10 @@ import { createFormatedDate, createShortEmail } from "../services/publicFunction
 
 /* Class that present user object*/
 export class User {
-    constructor(id, name, email, dateOfBirth, image){
+    constructor(gender, name, email, dateOfBirth, image){
         try {
             
-            if(!id){
+            if(!gender){
                 throw new Error("User id must be defined!");
             }
             if(!name){
@@ -20,7 +20,7 @@ export class User {
             if(!image){
                 throw new Error("User image must be defined!");
             }
-            if(typeof id !== "string"){
+            if(typeof gender !== "string"){
                 throw new Error("Input for user id must be string!");
             }
             if(typeof name !== "string"){
@@ -36,7 +36,7 @@ export class User {
                 throw new Error("Input for user image must be string!");
             }
 
-            this.id = id;
+            this.gender = gender;
             this.name = name;
             this.email = email;
             this.dateOfBirth = new Date (dateOfBirth);
