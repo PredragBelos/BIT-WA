@@ -1,0 +1,37 @@
+.userListBox {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.userListBox .userImage {
+  width: 100px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.userListBox .userImage img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.userListBox .userData {
+  width: 1fr;
+}
+
+.userListBox .userData p {
+  margin: 0px;
+}
+
+.userListBox .userData .iconMargin {
+  margin-right: 15px;
+}
+/*# sourceMappingURL=userList.css.map */

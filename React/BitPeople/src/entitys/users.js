@@ -2,7 +2,7 @@ import { createFormatedDate, createShortEmail } from "../services/publicFunction
 
 /* Class that present user object*/
 export class User {
-    constructor(gender, name, email, dateOfBirth, image){
+    constructor(gender, name, surname, email, dateOfBirth, image){
         try {
             
             if(!gender){
@@ -10,6 +10,9 @@ export class User {
             }
             if(!name){
                 throw new Error("User name must be defined!");
+            }
+            if(!surname){
+                throw new Error("User surname must be defined!");
             }
             if(!email){
                 throw new Error("User email must be defined!");
@@ -26,6 +29,9 @@ export class User {
             if(typeof name !== "string"){
                 throw new Error("Input for user name must be string!");
             }
+            if(typeof surname !== "string"){
+                throw new Error("Input for user surname must be string!");
+            }
             if(typeof email !== "string"){
                 throw new Error("Input for user email must be string!");
             }
@@ -38,6 +44,7 @@ export class User {
 
             this.gender = gender;
             this.name = name;
+            this.surname = surname;
             this.email = email;
             this.dateOfBirth = new Date (dateOfBirth);
             this.image = image;
@@ -54,5 +61,9 @@ export class User {
 
     showFormatedDate() {
         return createFormatedDate(this.dateOfBirth);
+    }
+
+    getFullName () {
+        return `${this.name} ${this.surname}`;
     }
 }

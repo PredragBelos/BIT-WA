@@ -11,7 +11,7 @@ export const createRandomUsers = () => {
     })
     .then(users => {
         return users.results.map(user => {
-            return new User(user.gender, user.name.first, user.email, user.dob.date, user.picture.large);
+            return new User(user.gender, user.name.first, user.name.last, user.email, user.dob.date, user.picture.large);
         })
     })
 }
