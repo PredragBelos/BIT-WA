@@ -1,10 +1,97 @@
-header{
-    padding: 10px 0px;
-    background-color: rgb(236,111,117);
-    p{
-        font-size: 25px;
-        color: rgb(255, 255, 255);
-        margin: 0px;
-        text-align: center;
+header {
+  padding: 10px 0px;
+  background-color: rgb(236, 111, 117);
+  .headerRow {
+    justify-content: flex-end;
+  }
+  .logo {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    text-align: center;
+  }
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .headerIcon {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
     }
+  }
+}
+
+/*Media screen*/
+@media screen and (min-width: 1400px) and (max-width: 6000px) {
+  header {
+    .logo {
+      width: 1120px;
+      padding-left: 100px;
+    }
+    .icon {
+      width: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  header {
+    .logo {
+      width: 940px;
+      padding-left: 100px;
+    }
+    .icon {
+      width: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  header {
+    .logo {
+      width: 760px;
+      padding-left: 100px;
+    }
+    .icon {
+      width: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    .logo {
+      width: 520px;
+      padding-left: 100px;
+    }
+    .icon {
+      width: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  header {
+    .logo {
+      width: 440px;
+      padding-left: 100px;
+    }
+    .icon {
+      width: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  header {
+    .headerRow {
+      justify-content: center;
+    }
+    .logo {
+      width: 250px;
+    }
+    .icon {
+      width: 50px;
+    }
+  }
 }

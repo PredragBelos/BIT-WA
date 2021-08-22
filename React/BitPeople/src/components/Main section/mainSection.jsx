@@ -10,6 +10,7 @@ export const MainSection = () => {
 
     /* State*/
     let [userData, setUserData] = useState([]);
+    
 
     /* Life cicle*/
     useEffect(() => {
@@ -23,7 +24,7 @@ export const MainSection = () => {
         <section className="container-flow mainSection">
             <div className="container mainSectionContainer">
                 <div className="row mainSectionRow">
-                    {/* <div className="userList">
+                    <div className={`userList`}>
                     {
                         userData.map((user, index) => {
                             return (
@@ -31,7 +32,7 @@ export const MainSection = () => {
                             );
                         })
                     } 
-                    </div> */}
+                    </div>
 
                     <div className="userCards">
                     {

@@ -4,6 +4,7 @@ import { MainSection } from '../Main section/mainSection';
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
       <Header/>
