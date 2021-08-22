@@ -1,0 +1,116 @@
+.cardBorder {
+  margin-bottom: 10px;
+}
+
+.cardBorder .card {
+  margin: 0px auto;
+}
+
+.cardBorder .card .userImage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 15px;
+}
+
+.cardBorder .card .userImage p {
+  color: white;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.cardBorder .card .userData {
+  padding: 10px;
+}
+
+.cardBorder .card .userData p {
+  font-size: 14px;
+  margin: 5px 0px;
+}
+
+.cardBorder .card .userData p .iconMargin {
+  margin-right: 15px;
+}
+
+/*Media screen*/
+@media screen and (min-width: 1400px) and (max-width: 6000px) {
+  .cardBorder {
+    width: 20%;
+  }
+  .cardBorder .card {
+    width: 90%;
+  }
+  .cardBorder .card .userImage {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .cardBorder {
+    width: 20%;
+  }
+  .cardBorder .card {
+    width: 95%;
+  }
+  .cardBorder .card .userImage {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .cardBorder {
+    width: 25%;
+  }
+  .cardBorder .card {
+    width: 95%;
+  }
+  .cardBorder .card .userImage {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .cardBorder {
+    width: 33%;
+  }
+  .cardBorder .card {
+    width: 95%;
+  }
+  .cardBorder .card .userImage {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 554px) and (max-width: 768px) {
+  .cardBorder {
+    width: 50%;
+  }
+  .cardBorder .card {
+    width: 85%;
+  }
+  .cardBorder .card .userImage {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 554px) {
+  .cardBorder {
+    width: 100%;
+  }
+  .cardBorder .card {
+    width: 230px;
+  }
+  .cardBorder .card .userImage {
+    height: 250px;
+  }
+}
+/*# sourceMappingURL=userCard.css.map */

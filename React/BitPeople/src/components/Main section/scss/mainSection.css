@@ -1,5 +1,24 @@
 .mainSection {
   min-height: 100vh;
-  margin: 10px 0px;
+  margin: 10px 0px 0px 0px;
+}
+
+.mainSection .userList {
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainSection .userCards {
+  padding: 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=mainSection.css.map */
