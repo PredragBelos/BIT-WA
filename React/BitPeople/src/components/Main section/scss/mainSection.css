@@ -21,4 +21,12 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
+.mainSection .hide {
+  display: none;
+}
+
+.mainSection .show {
+  display: block;
+}
 /*# sourceMappingURL=mainSection.css.map */

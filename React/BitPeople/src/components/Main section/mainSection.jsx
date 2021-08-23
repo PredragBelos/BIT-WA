@@ -6,25 +6,26 @@ import './scss/mainSection.css';
 
 
 /*Function for create HTML elements for rendering*/
-export const MainSection = () => {
+export const MainSection = ({visibilityOfUserList, visibilityOfUserCard}) => {
 
-    /* State*/
+    //STATE
     let [userData, setUserData] = useState([]);
     
-
-    /* Life cicle*/
+    
+    // LIFE CYCLE
     useEffect(() => {
         createRandomUsers().then(users => {
             setUserData(users);
         })
     },[])
 
-    /* Render*/
+
+    //RENDER
     return (
         <section className="container-flow mainSection">
             <div className="container mainSectionContainer">
                 <div className="row mainSectionRow">
-                    <div className={`userList`}>
+                    <div className={`userList ${visibilityOfUserList}`}>
                     {
                         userData.map((user, index) => {
                             return (
@@ -34,7 +35,7 @@ export const MainSection = () => {
                     } 
                     </div>
 
-                    <div className="userCards">
+                    <div className={`userCards ${visibilityOfUserCard}`}>
                     {
                         userData.map((user, index) => {
                             return (
