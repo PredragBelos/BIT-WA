@@ -14,20 +14,27 @@ export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refres
     
 
     // LIFE CYCLE
-   useEffect(() => {
-    createRandomUsers().then(users => {
-        setUserData(users);
-    })
-   },[refreshState])
+    useEffect(() => {
+        createRandomUsers().then(users => {
+            setUserData(users);
+        })
+    }, [refreshState])
 
     
+    //FUNCTIONS
+
+    /*Function for searchData*/
+    const search = userData => setUserData(userData);
+
 
     //RENDER
     return (
         <section className="container-flow mainSection">
             <div className="container mainSectionContainer">
                 <div className="row searchRow">
-                    <SearchBox/>
+                    <SearchBox
+                    userData={userData}
+                    setUserData={search}/>
                 </div>
                 <div className="row mainSectionRow">
                     <div className={`userList ${visibilityOfUserList}`}>
