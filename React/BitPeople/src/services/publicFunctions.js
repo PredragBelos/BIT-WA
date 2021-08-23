@@ -9,3 +9,13 @@ export const createFormatedDate = date => {
     let result = `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}.`;
     return result;
 }
+
+/* Function for check user gender*/
+export const checkGender = gender => {
+    if(gender === "female"){
+        return "redish"
+    }
+    else{
+        return "";
+    }
+}

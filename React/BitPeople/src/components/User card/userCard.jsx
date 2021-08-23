@@ -1,14 +1,15 @@
 import React from 'react';
 import './scss/userCard.css';
 import { emailIcon, birdthdayIcon } from '../../data/data';
+import { checkGender } from '../../services/publicFunctions';
 
 
 /*Function for create HTML elements for rendering*/
-export const UserCard = ({ name, email, birthdate, image }) => {
+export const UserCard = ({ name, email, birthdate, image, gender }) => {
 
     return (
         <div className="cardBorder">
-            <div className="card">
+            <div className={`card ${checkGender(gender)}`}>
                 <div className="userImage" style={{backgroundImage: `url(${image})`}}>
                     <p>{name}</p>
                 </div>

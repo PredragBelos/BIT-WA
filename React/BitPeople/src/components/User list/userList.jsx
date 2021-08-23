@@ -1,13 +1,14 @@
 import React from 'react';
 import { birdthdayIcon, emailIcon } from '../../data/data';
+import { checkGender } from '../../services/publicFunctions';
 import './scss/userList.css';
 
 
 /*Function for create HTML elements for rendering*/
-export const UserList = ({ name, email, birthdate, image }) => {
+export const UserList = ({ name, email, birthdate, image, gender }) => {
 
     return (
-        <div className="userListBox">
+        <div className={`userListBox ${checkGender(gender)}`}>
 
             <div className="userImage">
                 <img src={image} alt="img..." />

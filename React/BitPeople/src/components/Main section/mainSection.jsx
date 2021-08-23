@@ -30,7 +30,7 @@ export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refres
                         {
                             userData.map((user, index) => {
                                 return (
-                                    <UserList name={user.getFullName()} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} key={index} />
+                                    <UserList name={user.getFullName()} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} gender={user.gender} key={index} />
                                 );
                             })
                         }
@@ -40,7 +40,7 @@ export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refres
                         {
                             userData.map((user, index) => {
                                 return (
-                                    <UserCard name={user.name} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} key={index} />
+                                    <UserCard name={user.name} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} gender={user.gender} key={index} />
                                 );
                             })
                         }
