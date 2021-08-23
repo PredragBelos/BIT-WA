@@ -7,12 +7,16 @@ import './App.css';
 function App() {
 
   // STATE
-
-  /* Functon for folowing state of userList element*/
+  
+  /* State of userList element*/
   const [userListVisibility, setVisibilityOfUserList] = useState("block");
 
-  /* Function for folowing state of userCard element*/
+  /* State of userCard element*/
   const [userCardVisibility, setVisibilityOfUserCard] = useState("hide");
+
+  /* State of user data*/
+  const [isRefresh, setRefreshState] = useState(true);
+
 
   //FUNCTIONS
 
@@ -21,6 +25,9 @@ function App() {
 
   /* UserCard prop function*/
   const userCardProps = userCardVisibility => setVisibilityOfUserCard(userCardVisibility);
+
+  /* Refresh users prop function*/
+  const refreshProps = isRefresh => setRefreshState(isRefresh);
 
 
   //RENDER
@@ -31,10 +38,13 @@ function App() {
         stateOfUserList={userListVisibility}
         userCardVisibility={userCardProps}
         stateOfUserCard={userCardVisibility}
+        refreshState = {isRefresh}
+        setRefreshState = {refreshProps}
       />
       <MainSection
         visibilityOfUserList={userListVisibility}
         visibilityOfUserCard={userCardVisibility}
+        refreshState={isRefresh}
       />
       <Footer />
     </div>

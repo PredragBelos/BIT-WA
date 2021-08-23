@@ -6,19 +6,20 @@ import './scss/mainSection.css';
 
 
 /*Function for create HTML elements for rendering*/
-export const MainSection = ({visibilityOfUserList, visibilityOfUserCard}) => {
+export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refreshState }) => {
 
     //STATE
     let [userData, setUserData] = useState([]);
     
-    
-    // LIFE CYCLE
-    useEffect(() => {
-        createRandomUsers().then(users => {
-            setUserData(users);
-        })
-    },[])
 
+    // LIFE CYCLE
+   useEffect(() => {
+    createRandomUsers().then(users => {
+        setUserData(users);
+    })
+   },[refreshState])
+
+    
 
     //RENDER
     return (
@@ -26,23 +27,23 @@ export const MainSection = ({visibilityOfUserList, visibilityOfUserCard}) => {
             <div className="container mainSectionContainer">
                 <div className="row mainSectionRow">
                     <div className={`userList ${visibilityOfUserList}`}>
-                    {
-                        userData.map((user, index) => {
-                            return (
-                                <UserList name={user.getFullName()} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} key={index}/>
-                            );
-                        })
-                    } 
+                        {
+                            userData.map((user, index) => {
+                                return (
+                                    <UserList name={user.getFullName()} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} key={index} />
+                                );
+                            })
+                        }
                     </div>
 
                     <div className={`userCards ${visibilityOfUserCard}`}>
-                    {
-                        userData.map((user, index) => {
-                            return (
-                                <UserCard name={user.name} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} key={index}/>
-                            );
-                        })
-                    }
+                        {
+                            userData.map((user, index) => {
+                                return (
+                                    <UserCard name={user.name} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} key={index} />
+                                );
+                            })
+                        }
                     </div>
                 </div>
             </div>
