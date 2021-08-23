@@ -1,0 +1,112 @@
+.searchBox {
+  width: 100%;
+  margin: 25px 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchBox .searchIcon {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchBox .searchInput {
+  -webkit-box-flex: 98;
+      -ms-flex-positive: 98;
+          flex-grow: 98;
+}
+
+.searchBox .searchInput input {
+  width: 100%;
+  padding: 5px;
+  border: 0px;
+  border-bottom: 1px solid #c8c8c8;
+  outline: none;
+}
+
+/*Media screen*/
+@media screen and (min-width: 1400px) and (max-width: 6000px) {
+  .searchBox .searchIcon {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  .searchBox .searchInput {
+    -webkit-box-flex: 98;
+        -ms-flex-positive: 98;
+            flex-grow: 98;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .searchBox .searchIcon {
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+  }
+  .searchBox .searchInput {
+    -webkit-box-flex: 97;
+        -ms-flex-positive: 97;
+            flex-grow: 97;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .searchBox .searchIcon {
+    -webkit-box-flex: 4;
+        -ms-flex-positive: 4;
+            flex-grow: 4;
+  }
+  .searchBox .searchInput {
+    -webkit-box-flex: 96;
+        -ms-flex-positive: 96;
+            flex-grow: 96;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .searchBox .searchIcon {
+    -webkit-box-flex: 5;
+        -ms-flex-positive: 5;
+            flex-grow: 5;
+  }
+  .searchBox .searchInput {
+    -webkit-box-flex: 95;
+        -ms-flex-positive: 95;
+            flex-grow: 95;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .searchBox .searchIcon {
+    -webkit-box-flex: 10;
+        -ms-flex-positive: 10;
+            flex-grow: 10;
+    padding-left: 20px;
+  }
+  .searchBox .searchInput {
+    -webkit-box-flex: 90;
+        -ms-flex-positive: 90;
+            flex-grow: 90;
+    padding-right: 20px;
+  }
+}
+/*# sourceMappingURL=searchBox.css.map */

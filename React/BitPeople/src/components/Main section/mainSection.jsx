@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createRandomUsers } from '../../services/createUserList';
+import { SearchBox } from '../Search box/searchBox';
 import { UserCard } from '../User card/userCard';
 import { UserList } from '../User list/userList';
 import './scss/mainSection.css';
@@ -25,6 +26,9 @@ export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refres
     return (
         <section className="container-flow mainSection">
             <div className="container mainSectionContainer">
+                <div className="row searchRow">
+                    <SearchBox/>
+                </div>
                 <div className="row mainSectionRow">
                     <div className={`userList ${visibilityOfUserList}`}>
                         {
