@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { createRandomUsers } from '../../services/createUserList';
+import { loadingAnimationVisibility, searchBarVisibility } from '../../services/mainSectionComponentFunctions';
+import { LoadingAnimation } from '../Loading animation/loadingAnimation';
 import { SearchBox } from '../Search box/searchBox';
 import { UserCard } from '../User card/userCard';
 import { UserList } from '../User list/userList';
@@ -28,17 +30,23 @@ export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refres
     /*Function for searchData*/
     const searchResultProp = searchResult => (setSearchResult(searchResult));
 
-    
+
     //RENDER
     return (
         <section className="container-flow mainSection">
             <div className="container mainSectionContainer">
-                <div className="row searchRow">
+                
+                <div className={`row loadingAnimation ${loadingAnimationVisibility(userData)}`}>
+                  <LoadingAnimation/>
+                </div>
+
+                <div className={`row searchRow ${searchBarVisibility(userData)}`}>
                     <SearchBox
                         searchResult={searchResult}
                         setSearchResult={searchResultProp}
                         userData={userData} />
                 </div>
+
                 <div className="row mainSectionRow">
 
                     <div className={`userList ${visibilityOfUserList}`}>

@@ -1,22 +1,22 @@
-.mainSection{
+.mainSection {
     min-height: 100vh;
     margin: 0px;
-    .userList{
+    .userList {
         padding: 0px;
         margin: 0px;
-    
     }
-    .userCards{
+    .userCards {
         padding: 0px;
         margin: 0px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .hide{
+    .hide {
         display: none;
     }
-    .show{
+    .show {
         display: block;
     }
 }
+

@@ -1,7 +1,7 @@
 
 /* Function for create short email adrress*/
 export const createShortEmail = array => {
-    return `${array[0].slice(0,3)}...${array[0].slice(array[0].length - 3, array[0].length)}@${array[1]}`;
+    return `${array[0].slice(0, 3)}...${array[0].slice(array[0].length - 3, array[0].length)}@${array[1]}`;
 }
 
 /* Function for crete formated date object*/
@@ -12,10 +12,14 @@ export const createFormatedDate = date => {
 
 /* Function for check user gender*/
 export const checkGender = gender => {
-    if(gender === "female"){
+    if (gender === "female") {
         return "redish"
     }
-    else{
+    else {
         return "";
     }
 }
+
+
+
+
