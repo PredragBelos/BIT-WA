@@ -11,49 +11,65 @@ export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refres
 
     //STATE
     let [userData, setUserData] = useState([]);
-    
+    const [searchResult, setSearchResult] = useState([]);
+
 
     // LIFE CYCLE
     useEffect(() => {
         createRandomUsers().then(users => {
             setUserData(users);
+            setSearchResult(users);
         })
     }, [refreshState])
 
-    
+
     //FUNCTIONS
 
     /*Function for searchData*/
-    const search = userData => setUserData(userData);
+    const searchResultProp = searchResult => (setSearchResult(searchResult));
 
-
+    
     //RENDER
     return (
         <section className="container-flow mainSection">
             <div className="container mainSectionContainer">
                 <div className="row searchRow">
                     <SearchBox
-                    userData={userData}
-                    setUserData={search}/>
+                        searchResult={searchResult}
+                        setSearchResult={searchResultProp}
+                        userData={userData} />
                 </div>
                 <div className="row mainSectionRow">
+
                     <div className={`userList ${visibilityOfUserList}`}>
                         {
-                            userData.map((user, index) => {
-                                return (
-                                    <UserList name={user.getFullName()} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} gender={user.gender} key={index} />
-                                );
-                            })
+                            (userData.length === searchResult.length)
+                                ? userData.map((user, index) => {
+                                    return (
+                                        <UserList name={user.getFullName()} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} gender={user.gender} key={index} />
+                                    );
+                                })
+                                : searchResult.map((user, index) => {
+                                    return (
+                                        <UserList name={user.getFullName()} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} gender={user.gender} key={index} />
+                                    );
+                                })
                         }
                     </div>
 
                     <div className={`userCards ${visibilityOfUserCard}`}>
                         {
-                            userData.map((user, index) => {
-                                return (
-                                    <UserCard name={user.name} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} gender={user.gender} key={index} />
-                                );
-                            })
+                            (userData.length === searchResult.length)
+                                ? userData.map((user, index) => {
+                                    return (
+                                        <UserCard name={user.name} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} gender={user.gender} key={index} />
+                                    );
+                                })
+                                : searchResult.map((user, index) => {
+                                    return (
+                                        <UserCard name={user.name} email={user.hideEmail()} birthdate={user.showFormatedDate()} image={user.image} gender={user.gender} key={index} />
+                                    );
+                                })
                         }
                     </div>
                 </div>

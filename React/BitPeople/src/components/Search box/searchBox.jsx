@@ -1,16 +1,16 @@
 import { searchIcon } from '../../data/data';
 import './scss/searchBox.css';
 
-export const SearchBox = ({userData, setUserData}) => {
+export const SearchBox = ({ searchResult, setSearchResult, userData }) => {
 
     const onChange = (e) => {
-       let result = userData.filter(object => {
-        return object.name.includes(`${e.target.value}`)
-       });
-       
-       console.log(result);
-       setUserData(result);
+        let result = userData.filter(item => {
+            return item.name.includes(`${e.target.value}`);
+        });
+
+        setSearchResult(result);
     }
+    
 
     return (
         <div className="searchBox">
