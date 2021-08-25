@@ -19,3 +19,13 @@ export const searchBarVisibility = (arr) => {
         return "hide";
     }
 }
+
+/* Function for change visibility of userNotFound page*/
+export const userNotFounfVisibility = (loadingAnimationVisibility, refreshUserArr, userDataArr) => {
+    if(loadingAnimationVisibility(userDataArr) === "hide" && refreshUserArr.length === 0){
+        return "visibility";
+    }
+    else{
+        return "hide";
+    }
+}

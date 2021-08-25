@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { createRandomUsers } from '../../services/createUserList';
-import { loadingAnimationVisibility, searchBarVisibility } from '../../services/mainSectionComponentFunctions';
+import { loadingAnimationVisibility, searchBarVisibility, userNotFounfVisibility } from '../../services/mainSectionComponentFunctions';
 import { LoadingAnimation } from '../Loading animation/loadingAnimation';
 import { SearchBox } from '../Search box/searchBox';
 import { UserCard } from '../User card/userCard';
 import { UserList } from '../User list/userList';
+import { UserNotFound } from '../User not found page/userNotFound';
 import './scss/mainSection.css';
 
 
@@ -36,6 +37,8 @@ export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refres
         <section className="container-flow mainSection">
             <div className="container mainSectionContainer">
                 
+                
+
                 <div className={`row loadingAnimation ${loadingAnimationVisibility(userData)}`}>
                   <LoadingAnimation/>
                 </div>
@@ -45,6 +48,10 @@ export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refres
                         searchResult={searchResult}
                         setSearchResult={searchResultProp}
                         userData={userData} />
+                </div>
+
+                <div className={`row notFoundPage ${userNotFounfVisibility(loadingAnimationVisibility, searchResult, userData)}`}>
+                    <UserNotFound/>
                 </div>
 
                 <div className="row mainSectionRow">

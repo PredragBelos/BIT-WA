@@ -1,0 +1,29 @@
+.userNotFound {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.userNotFound .message {
+  width: 300px;
+}
+
+.userNotFound .message .messageIcon {
+  text-align: center;
+  font-size: 70px;
+  color: #6e6e6e;
+}
+
+.userNotFound .message .messageText {
+  font-size: 30px;
+  text-align: center;
+  color: #6e6e6e;
+}
+/*# sourceMappingURL=userNotFound.css.map */

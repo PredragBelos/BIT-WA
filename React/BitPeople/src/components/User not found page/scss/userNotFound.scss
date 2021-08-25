@@ -1,0 +1,19 @@
+.userNotFound {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .message {
+        width: 300px;
+        .messageIcon {
+            text-align: center;
+            font-size: 70px;
+            color: rgb(110, 110, 110);
+        }
+        .messageText {
+            font-size: 30px;
+            text-align: center;
+            color: rgb(110, 110, 110);
+        }
+    }
+}
