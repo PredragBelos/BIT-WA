@@ -2,7 +2,8 @@ header {
   padding: 10px 0px;
   background-color: rgb(236, 111, 117);
   .headerRow {
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
   }
   .logo {
     font-size: 25px;
@@ -19,18 +20,26 @@ header {
       font-size: 20px;
     }
   }
-}
+  .aboutBtn{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+  } 
+} 
 
 /*Media screen*/
 @media screen and (min-width: 1400px) and (max-width: 6000px) {
   header {
     .logo {
-      width: 1120px;
-      padding-left: 100px;
+      flex-grow: 1;
     }
     .icon {
-      width: 50px;
+      flex-grow: 1;
     }
+    .aboutBtn{
+      flex-grow: 1;
+    } 
   }
 }
 

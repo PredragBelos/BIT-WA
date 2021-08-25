@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { refreshIcon, userListIcon } from '../../data/data';
-import { changeIcon, refreshUsers, sendUserCardState, sendUserListState } from '../../services/headerComponentFunctions';
+import { aboutButtonAction, changeIcon, logoAction, refreshUsers, sendUserCardState, sendUserListState } from '../../services/headerComponentFunctions';
 import './scss/header.css';
 
 
 /*Function for create HTML elements for rendering*/
-export const Header = ({ userListVisibility, stateOfUserList, userCardVisibility, stateOfUserCard, setRefreshState, refreshState }) => {
+export const Header = ({ userListVisibility, stateOfUserList, userCardVisibility, stateOfUserCard, setRefreshState, refreshState, aboutVisibility, aboutVisibilityState }) => {
 
     // STATE
     const [viewIcon, setViewIcon] = useState(userListIcon);
@@ -22,12 +22,23 @@ export const Header = ({ userListVisibility, stateOfUserList, userCardVisibility
         refreshUsers(refreshState, setRefreshState);
     }
 
+    /* Function on about button*/
+    const clickOnAbout = () => {
+        aboutButtonAction(aboutVisibilityState, aboutVisibility);
+    }
+
+    /* Function on LOGO */
+    const clickOnLogo = () => {
+        logoAction(aboutVisibilityState, aboutVisibility);
+    }
+
     // RENDER
     return (
         <header className="container-flow">
             <div className="container headerContainer">
                 <div className="row headerRow">
-                    <p className="logo">Bit Persons</p>
+                    <p className="logo" onClick={clickOnLogo}>Bit Persons</p>
+                    <div className="aboutBtn" onClick={clickOnAbout}>About</div>
                     <div className="icon" onClick={clickOnRefreshIcon}>{refreshIcon}</div>
                     <div className="icon" onClick={clickOnViewIcon}>{viewIcon}</div>
                 </div>

@@ -11,7 +11,7 @@ import './scss/mainSection.css';
 
 
 /*Function for create HTML elements for rendering*/
-export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refreshState }) => {
+export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refreshState, aboutVisibility }) => {
 
     //STATE
     let [userData, setUserData] = useState([]);
@@ -32,16 +32,24 @@ export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refres
     /*Function for searchData*/
     const searchResultProp = searchResult => (setSearchResult(searchResult));
 
+    /* Function for mainSection visibility*/
+    const mainSectionVisibility = () => {
+        if (aboutVisibility === "visibility"){
+            return ("hide");
+        }
+        else{
+            return ("visibility");
+        }
+    }
 
+    
     //RENDER
     return (
-        <section className="container-flow mainSection">
-            <div className="container mainSectionContainer">
-                
-                
+        <section className={`container-flow mainSection ${mainSectionVisibility()}`}>
+            <div className="container mainSectionContainer ">
 
                 <div className={`row loadingAnimation ${loadingAnimationVisibility(userData)}`}>
-                  <LoadingAnimation/>
+                    <LoadingAnimation />
                 </div>
 
                 <div className={`row searchRow ${searchBarVisibility(userData)}`}>
@@ -52,11 +60,11 @@ export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refres
                 </div>
 
                 <div className={`row notFoundPage ${userNotFounfVisibility(loadingAnimationVisibility, searchResult, userData)}`}>
-                    <UserNotFound/>
+                    <UserNotFound />
                 </div>
 
                 <div className={`row userStatistic ${userStatisticVisibility(userData)}`}>
-                    <CardStatistic userData={searchResult}/>
+                    <CardStatistic userData={searchResult} />
                 </div>
 
                 <div className="row mainSectionRow">

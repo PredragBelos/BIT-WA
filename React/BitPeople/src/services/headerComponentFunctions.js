@@ -39,3 +39,17 @@ export const refreshUsers = (state, func) => {
         func(true); 
     }
 }
+
+/* Function for set about page visibiliti after click on about button*/
+export const aboutButtonAction = (visibility, setVisibility) => {
+    if(visibility === "hide"){
+        setVisibility("visibility");
+    }
+}
+
+/* Function for set about page visibiliti after click on LOGO*/
+export const logoAction = (visibility, setVisibility) => {
+    if(visibility !== "hide"){
+        setVisibility("hide");
+    }
+}

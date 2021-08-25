@@ -4,9 +4,13 @@ header {
 }
 
 header .headerRow {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .logo {
@@ -33,14 +37,29 @@ header .icon .headerIcon {
   font-size: 20px;
 }
 
+header .aboutBtn {
+  color: white;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+
 /*Media screen*/
 @media screen and (min-width: 1400px) and (max-width: 6000px) {
   header .logo {
-    width: 1120px;
-    padding-left: 100px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   header .icon {
-    width: 50px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  header .aboutBtn {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 

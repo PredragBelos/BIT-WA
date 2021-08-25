@@ -1,0 +1,17 @@
+.about {
+  padding: 0px;
+  height: 100vh;
+}
+
+.about h1 {
+  margin-top: 80px;
+}
+
+.about h3 {
+  margin-top: 50px;
+}
+
+.about p {
+  text-align: justify;
+}
+/*# sourceMappingURL=about.css.map */
