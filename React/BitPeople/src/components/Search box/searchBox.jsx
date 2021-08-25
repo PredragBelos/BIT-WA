@@ -5,7 +5,7 @@ export const SearchBox = ({ searchResult, setSearchResult, userData }) => {
 
     const onChange = (e) => {
         let result = userData.filter(item => {
-            return item.name.includes(`${e.target.value}`);
+            return item.getFullName().toUpperCase().includes(`${e.target.value.toUpperCase()}`);
         });
 
         setSearchResult(result);
