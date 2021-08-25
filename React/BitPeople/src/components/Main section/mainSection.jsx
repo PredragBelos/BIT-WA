@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { createRandomUsers } from '../../services/createUserList';
-import { loadingAnimationVisibility, searchBarVisibility, userNotFounfVisibility } from '../../services/mainSectionComponentFunctions';
+import { loadingAnimationVisibility, searchBarVisibility, userNotFounfVisibility, userStatisticVisibility } from '../../services/mainSectionComponentFunctions';
+import { CardStatistic } from '../Card statistic/cardStatistic';
 import { LoadingAnimation } from '../Loading animation/loadingAnimation';
 import { SearchBox } from '../Search box/searchBox';
 import { UserCard } from '../User card/userCard';
@@ -52,6 +53,10 @@ export const MainSection = ({ visibilityOfUserList, visibilityOfUserCard, refres
 
                 <div className={`row notFoundPage ${userNotFounfVisibility(loadingAnimationVisibility, searchResult, userData)}`}>
                     <UserNotFound/>
+                </div>
+
+                <div className={`row userStatistic ${userStatisticVisibility(userData)}`}>
+                    <CardStatistic userData={searchResult}/>
                 </div>
 
                 <div className="row mainSectionRow">

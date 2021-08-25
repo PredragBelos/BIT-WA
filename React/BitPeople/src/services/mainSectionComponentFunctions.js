@@ -29,3 +29,14 @@ export const userNotFounfVisibility = (loadingAnimationVisibility, refreshUserAr
         return "hide";
     }
 }
+
+/* Function for change visibility of user statistic*/
+export const userStatisticVisibility = (arr) => {
+
+    if (arr.length !== 0) {
+        return "visibility";
+    }
+    else {
+        return "hide";
+    }
+}

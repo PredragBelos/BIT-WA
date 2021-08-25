@@ -46,7 +46,7 @@ function App() {
         visibilityOfUserCard={userCardVisibility}
         refreshState={isRefresh}
       />
-      <Footer />
+      <Footer refreshState={isRefresh}/>
     </div>
   );
 }

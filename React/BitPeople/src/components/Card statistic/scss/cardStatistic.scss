@@ -1,0 +1,28 @@
+.statistic{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0px;
+    margin: 0px;
+    .male{
+        width: 100px;
+        p{
+            text-align: right;
+            margin: 0px;
+            color: rgb(110, 110, 110);
+            span{
+                margin-left: 10px;
+            }
+        }
+    }
+    .female{
+        width: 100px;
+        p{
+            text-align: right;
+            margin: 0px;
+            color: rgb(110, 110, 110);
+            span{
+                margin-left: 10px;
+            }
+        }
+    }
+}

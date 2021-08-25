@@ -1,0 +1,39 @@
+.statistic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px 0px;
+  margin: 0px;
+}
+
+.statistic .male {
+  width: 100px;
+}
+
+.statistic .male p {
+  text-align: right;
+  margin: 0px;
+  color: #6e6e6e;
+}
+
+.statistic .male p span {
+  margin-left: 10px;
+}
+
+.statistic .female {
+  width: 100px;
+}
+
+.statistic .female p {
+  text-align: right;
+  margin: 0px;
+  color: #6e6e6e;
+}
+
+.statistic .female p span {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=cardStatistic.css.map */
