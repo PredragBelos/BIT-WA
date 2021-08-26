@@ -1,119 +1,168 @@
 header {
-  padding: 10px 0px;
   background-color: #ec6f75;
+  padding: 10px 0px;
 }
 
-header .headerRow {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header .logo {
-  font-size: 25px;
-  color: white;
+header .headerRow .logo {
+  padding: 0px;
   margin: 0px;
-  text-align: center;
-}
-
-header .icon {
+  font-size: 30px;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-header .icon .headerIcon {
-  color: white;
-  font-size: 20px;
-}
-
-header .aboutBtn {
+header .headerRow .aboutBtn {
+  padding: 7px 0px 0px 0px;
+  margin: 0px;
   color: white;
   font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .headerRow .refreshIcon {
+  padding: 7px 0px 0px 0px;
   margin: 0px;
-  padding: 0px;
+  color: white;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .headerRow .styleIcon {
+  padding: 7px 0px 0px 0px;
+  margin: 0px;
+  color: white;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*Media screen*/
 @media screen and (min-width: 1400px) and (max-width: 6000px) {
-  header .logo {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+  header .headerRow .logo {
+    width: 1120px;
   }
-  header .icon {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+  header .headerRow .aboutBtn {
+    width: 100px;
   }
-  header .aboutBtn {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+  header .headerRow .refreshIcon {
+    width: 50px;
+  }
+  header .headerRow .styleIcon {
+    width: 50px;
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-  header .logo {
+  header .headerRow .logo {
     width: 940px;
-    padding-left: 100px;
   }
-  header .icon {
+  header .headerRow .aboutBtn {
+    width: 100px;
+  }
+  header .headerRow .refreshIcon {
+    width: 50px;
+  }
+  header .headerRow .styleIcon {
     width: 50px;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  header .logo {
+  header .headerRow .logo {
     width: 760px;
-    padding-left: 100px;
   }
-  header .icon {
+  header .headerRow .aboutBtn {
+    width: 100px;
+  }
+  header .headerRow .refreshIcon {
+    width: 50px;
+  }
+  header .headerRow .styleIcon {
     width: 50px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  header .logo {
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  header .headerRow .logo {
     width: 520px;
-    padding-left: 100px;
   }
-  header .icon {
+  header .headerRow .aboutBtn {
+    width: 100px;
+  }
+  header .headerRow .refreshIcon {
+    width: 50px;
+  }
+  header .headerRow .styleIcon {
     width: 50px;
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  header .logo {
-    width: 440px;
-    padding-left: 100px;
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  header .headerRow .logo {
+    width: 340px;
   }
-  header .icon {
+  header .headerRow .aboutBtn {
+    width: 100px;
+  }
+  header .headerRow .refreshIcon {
+    width: 50px;
+  }
+  header .headerRow .styleIcon {
     width: 50px;
   }
 }
 
 @media screen and (min-width: 0px) and (max-width: 576px) {
-  header .headerRow {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  header .logo {
-    width: 250px;
+  header .headerRow .logo {
+    width: 60%;
+    font-size: 25px;
   }
-  header .icon {
-    width: 50px;
+  header .headerRow .aboutBtn {
+    width: 20%;
+    padding-top: 7px;
+    font-size: 16px;
+  }
+  header .headerRow .refreshIcon {
+    width: 10%;
+    padding-top: 7px;
+    font-size: 16px;
+  }
+  header .headerRow .styleIcon {
+    width: 10%;
+    padding-top: 7px;
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=header.css.map */

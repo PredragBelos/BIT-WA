@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { refreshIcon, userListIcon } from '../../data/data';
+import { refreshIcon, userCardIcon, userListIcon } from '../../data/data';
 import { aboutButtonAction, changeIcon, logoAction, refreshUsers, sendUserCardState, sendUserListState } from '../../services/headerComponentFunctions';
 import './scss/header.css';
 
@@ -8,7 +8,7 @@ import './scss/header.css';
 export const Header = ({ userListVisibility, stateOfUserList, userCardVisibility, stateOfUserCard, setRefreshState, refreshState, aboutVisibility, aboutVisibilityState }) => {
 
     // STATE
-    const [viewIcon, setViewIcon] = useState(userListIcon);
+    const [viewIcon, setViewIcon] = useState(userCardIcon);
 
     /* Function for change state of viewIcon and visibility of userList and userCard*/
     const clickOnViewIcon = () => {
@@ -34,13 +34,14 @@ export const Header = ({ userListVisibility, stateOfUserList, userCardVisibility
 
     // RENDER
     return (
+        
         <header className="container-flow">
-            <div className="container headerContainer">
+            <div className="container">
                 <div className="row headerRow">
-                    <p className="logo" onClick={clickOnLogo}>Bit Persons</p>
+                    <div className="logo" onClick={clickOnLogo}>Bit Persons</div>
                     <div className="aboutBtn" onClick={clickOnAbout}>About</div>
-                    <div className="icon" onClick={clickOnRefreshIcon}>{refreshIcon}</div>
-                    <div className="icon" onClick={clickOnViewIcon}>{viewIcon}</div>
+                    <div className="refreshIcon" onClick={clickOnRefreshIcon}>{refreshIcon}</div>
+                    <div className="styleIcon" onClick={clickOnViewIcon}>{viewIcon}</div>
                 </div>
             </div>
         </header>

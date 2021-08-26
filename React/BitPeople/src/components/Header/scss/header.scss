@@ -1,106 +1,168 @@
-header {
+header{
+  background-color: rgb(236,111,117);
   padding: 10px 0px;
-  background-color: rgb(236, 111, 117);
-  .headerRow {
-    flex-direction: row;
-    justify-content: center;
-  }
-  .logo {
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    margin: 0px;
-    text-align: center;
-  }
-  .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .headerIcon {
+  .headerRow{
+    .logo{
+      padding: 0px;
+      margin: 0px;
+      font-size: 30px;
       color: rgb(255, 255, 255);
-      font-size: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .aboutBtn{
+      padding: 7px 0px 0px 0px;
+      margin: 0px;
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .refreshIcon{
+      padding: 7px 0px 0px 0px;
+      margin: 0px;
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .styleIcon{
+      padding: 7px 0px 0px 0px;
+      margin: 0px;
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
-  .aboutBtn{
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    margin: 0px;
-    padding: 0px;
-  } 
-} 
+}
+
+
 
 /*Media screen*/
 @media screen and (min-width: 1400px) and (max-width: 6000px) {
-  header {
-    .logo {
-      flex-grow: 1;
+  header{
+    .headerRow{
+      .logo{
+        width: 1120px;
+      }
+      .aboutBtn{
+        width: 100px;
+      }
+      .refreshIcon{
+        width: 50px; 
+      }
+      .styleIcon{
+        width: 50px;
+      }
     }
-    .icon {
-      flex-grow: 1;
-    }
-    .aboutBtn{
-      flex-grow: 1;
-    } 
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-  header {
-    .logo {
-      width: 940px;
-      padding-left: 100px;
-    }
-    .icon {
-      width: 50px;
+  header{
+    .headerRow{
+      .logo{
+        width: 940px;
+      }
+      .aboutBtn{
+        width: 100px;
+      }
+      .refreshIcon{
+        width: 50px; 
+      }
+      .styleIcon{
+        width: 50px;
+      }
     }
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  header {
-    .logo {
-      width: 760px;
-      padding-left: 100px;
-    }
-    .icon {
-      width: 50px;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  header {
-    .logo {
-      width: 520px;
-      padding-left: 100px;
-    }
-    .icon {
-      width: 50px;
+  header{
+    .headerRow{
+      .logo{
+        width: 760px;
+      }
+      .aboutBtn{
+        width: 100px;
+      }
+      .refreshIcon{
+        width: 50px; 
+      }
+      .styleIcon{
+        width: 50px;
+      }
     }
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  header {
-    .logo {
-      width: 440px;
-      padding-left: 100px;
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  header{
+    .headerRow{
+      .logo{
+        width: 520px;
+      }
+      .aboutBtn{
+        width: 100px;
+      }
+      .refreshIcon{
+        width: 50px; 
+      }
+      .styleIcon{
+        width: 50px;
+      }
     }
-    .icon {
-      width: 50px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  header{
+    .headerRow{
+      .logo{
+        width: 340px;
+      }
+      .aboutBtn{
+        width: 100px;
+      }
+      .refreshIcon{
+        width: 50px; 
+      }
+      .styleIcon{
+        width: 50px;
+      }
     }
   }
 }
 
 @media screen and (min-width: 0px) and (max-width: 576px) {
-  header {
-    .headerRow {
-      justify-content: center;
-    }
-    .logo {
-      width: 250px;
-    }
-    .icon {
-      width: 50px;
+  header{
+    padding-left: 10px;
+    padding-right: 10px;
+    .headerRow{
+      .logo{
+        width: 60%;
+        font-size: 25px;
+      }
+      .aboutBtn{
+        width: 20%;
+        padding-top: 7px;
+        font-size: 16px;
+      }
+      .refreshIcon{
+        width: 10%; 
+        padding-top: 7px;
+        font-size: 16px;
+      }
+      .styleIcon{
+        width: 10%;
+        padding-top: 7px;
+        font-size: 16px;
+      }
     }
   }
 }
+

@@ -1,6 +1,6 @@
 .about {
   padding: 0px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .about h1 {
@@ -13,5 +13,13 @@
 
 .about p {
   text-align: justify;
+}
+
+/*Media screen*/
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .about {
+    padding: 0px 20px;
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=about.css.map */
