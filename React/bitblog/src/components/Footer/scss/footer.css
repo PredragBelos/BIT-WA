@@ -1,0 +1,15 @@
+footer {
+  padding: 15px;
+}
+
+footer p {
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
+.defaultMB {
+  margin: 0px;
+  padding: 0px;
+}
+/*# sourceMappingURL=footer.css.map */

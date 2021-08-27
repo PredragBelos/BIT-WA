@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=author.css.map */
+.author {
+  padding: 0px 0px 15px 0px;
+  margin-top: 25px;
+  border-bottom: 1px solid black;
+}
+
+.author a {
+  font-size: 25px;
+  color: #1464f6;
+}
+/*# sourceMappingURL=author.css.map */

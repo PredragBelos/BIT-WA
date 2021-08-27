@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=home.css.map */
+.posts {
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.posts h1 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=home.css.map */

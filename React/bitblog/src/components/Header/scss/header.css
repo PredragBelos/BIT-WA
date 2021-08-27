@@ -1,0 +1,101 @@
+header .headerRow .logo {
+  width: auto;
+  -webkit-box-flex: 50;
+      -ms-flex-positive: 50;
+          flex-grow: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 25px;
+}
+
+header .headerRow .logo p {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+}
+
+header .headerRow .navBar {
+  width: auto;
+  -webkit-box-flex: 50;
+      -ms-flex-positive: 50;
+          flex-grow: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .headerRow .navBar .home a {
+  width: 120px;
+  color: #1464f6;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-right: 2px solid black;
+}
+
+header .headerRow .navBar .authors a {
+  width: 120px;
+  color: #1464f6;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-right: 2px solid black;
+}
+
+header .headerRow .navBar .about a {
+  width: 120px;
+  color: #1464f6;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Media screen*/
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  header .headerRow .logo {
+    -webkit-box-flex: 100;
+        -ms-flex-positive: 100;
+            flex-grow: 100;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0px;
+  }
+  header .headerRow .navBar {
+    -webkit-box-flex: 100;
+        -ms-flex-positive: 100;
+            flex-grow: 100;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px;
+  }
+}
+
+.defaultMB {
+  margin: 0px;
+  padding: 0px;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=header.css.map */

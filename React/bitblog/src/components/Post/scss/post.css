@@ -1,1 +1,21 @@
-/* No CSS *//*# sourceMappingURL=post.css.map */
+.post {
+  padding: 0px;
+  margin-top: 25px;
+  border-bottom: 1px solid black;
+}
+
+.post a {
+  font-size: 25px;
+  color: #1464f6;
+}
+
+.post p {
+  font-size: 18px;
+  color: black;
+}
+
+.defaultMB {
+  margin: 0px;
+  padding: 0px;
+}
+/*# sourceMappingURL=post.css.map */
