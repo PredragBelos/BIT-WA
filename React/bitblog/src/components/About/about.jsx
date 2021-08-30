@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './scss/about.css';
 import { AboutContent } from '../About content/aboutContent';
 import { Footer } from '../Footer/footer';
 import { Header } from '../Header/header';
