@@ -2,6 +2,7 @@ import React from 'react';
 import { Footer } from '../Footer/footer';
 import { Header } from '../Header/header';
 import './scss/newPost.css';
+import { Link } from 'react-router-dom';
 
 export const NewPost = () => {
     return (
@@ -23,8 +24,8 @@ export const NewPost = () => {
                 </div>
 
                 <div className="row postButtons">
-                    <button>Cancel</button>
-                    <button>Save</button>
+                    <button><Link to="/home">Cancel</Link></button>
+                    <button><Link to="/home">Save</Link></button>
                 </div>
             </div>
             <Footer />

@@ -42,6 +42,11 @@
   font-size: 18px;
 }
 
+.postButtons button a {
+  text-decoration: none;
+  color: black;
+}
+
 @media screen and (min-width: 0px) and (max-width: 576px) {
   .newPost {
     padding: 0px 25px;
