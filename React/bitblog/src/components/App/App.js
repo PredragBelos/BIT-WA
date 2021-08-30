@@ -1,5 +1,5 @@
 import './App.css';
-import { Redirect, Route} from 'react-router-dom';
+import { Route} from 'react-router-dom';
 import { Home } from '../Home/home';
 import { About } from '../About/about';
 import { Authors } from '../Authors/authors';
