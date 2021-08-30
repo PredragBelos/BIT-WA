@@ -1,0 +1,50 @@
+.newPost {
+  margin-top: 80px;
+  min-height: 100vh;
+}
+
+.newPost p {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0px;
+}
+
+.postHeading h1 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.postTitle input {
+  margin-bottom: 20px;
+}
+
+.postContentText textarea {
+  margin-bottom: 20px;
+}
+
+.postButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.postButtons button {
+  width: 150px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .newPost {
+    padding: 0px 25px;
+  }
+}
+/*# sourceMappingURL=newPost.css.map */

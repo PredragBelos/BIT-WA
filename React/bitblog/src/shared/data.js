@@ -1,0 +1,1 @@
+export const blogsURL = "https://jsonplaceholder.typicode.com/posts";
