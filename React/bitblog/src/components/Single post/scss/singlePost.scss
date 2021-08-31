@@ -1,0 +1,44 @@
+.singlePost {
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-left: 25px;
+    padding-right: 25px;
+    .titleRow{
+        justify-content: center;
+        h1 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            margin-bottom: 20px;
+            width: 80%;
+        } 
+        a{
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+    .bodyRow{
+        border-bottom: 1px solid rgb(0, 0, 0);
+        p{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+    }
+    .otherPosts{
+        h3{
+            margin-top: 20px;
+        }
+        ul{
+            list-style: none;
+            li{
+                font-size: 20px;
+                margin-top: 5px 0px;
+                color: rgb(20,100,246);
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}

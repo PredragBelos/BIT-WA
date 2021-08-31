@@ -17,3 +17,11 @@ ReactDOM.render(
 
 
 reportWebVitals();
+
+// const func = (e) => {
+//   console.log(e);
+// }
+
+// let proba = document.querySelector("body");
+
+// proba.addEventListener("click", func);

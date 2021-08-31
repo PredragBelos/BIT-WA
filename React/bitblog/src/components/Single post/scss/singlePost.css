@@ -1,0 +1,52 @@
+.singlePost {
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.singlePost .titleRow {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.singlePost .titleRow h1 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.singlePost .titleRow a {
+  text-align: center;
+  font-size: 25px;
+}
+
+.singlePost .bodyRow {
+  border-bottom: 1px solid black;
+}
+
+.singlePost .bodyRow p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.singlePost .otherPosts h3 {
+  margin-top: 20px;
+}
+
+.singlePost .otherPosts ul {
+  list-style: none;
+}
+
+.singlePost .otherPosts ul li {
+  font-size: 20px;
+  margin-top: 5px 0px;
+  color: #1464f6;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*# sourceMappingURL=singlePost.css.map */

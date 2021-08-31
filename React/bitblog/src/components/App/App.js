@@ -4,6 +4,7 @@ import { Home } from '../Home/home';
 import { About } from '../About/about';
 import { Authors } from '../Authors/authors';
 import { NewPost } from '../New post/newPost';
+import { SinglePost } from '../Single post/singlePost';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Route path="/authors" component={Authors}/>
       <Route path="/About" component={About}/>
       <Route path="/posts/new" component={NewPost}/>
+      <Route path="/post/:id" component={SinglePost}/>
       
       {/* <Redirect from="/" to="/home"/> */}
     

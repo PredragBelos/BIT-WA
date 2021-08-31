@@ -1,10 +1,13 @@
 
 /* Class that presents users objects*/
 export class User {
-    constructor(name, userName, email, phone, street, city, zipCode, lat, lng, companyName, slogan){
+    constructor(id, name, userName, email, phone, street, city, zipCode, lat, lng, companyName, slogan){
 
         try {
             /*Validation rules for controling property existence*/
+            if(!id){
+                throw new Error("User id must be defined!");
+            }
             if(!name){
                 throw new Error("User name must be defined!");
             }
@@ -39,6 +42,7 @@ export class User {
                 throw new Error("User company slogan must be defined!");
             }
 
+            this.id = id;
             this.name = name;
             this.userName = userName;
             this.email = email;

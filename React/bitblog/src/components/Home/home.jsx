@@ -5,6 +5,7 @@ import { Header } from '../Header/header';
 import { Post } from '../Post/post';
 import './scss/home.css';
 
+
 export const Home = () => {
 
     /*State*/
@@ -21,14 +22,15 @@ export const Home = () => {
     }, []);
 
 
+    /*Render*/
     return (
         <>
             <Header />
             <div className="container posts">
                 <h1>POSTS</h1>
                 {
-                    postData.map(item => {
-                        return <Post title={item.title} body={item.body} postID={item.id}/>
+                    postData.map((item, index) => {
+                        return <Post title={item.title} body={item.body} postId = {item.id} key={index}/>
                     })
                 }
             </div>

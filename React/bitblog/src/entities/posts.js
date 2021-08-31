@@ -1,7 +1,7 @@
 
 /* Class that present a post objects*/
 export class Post {
-    constructor(id, userId, title, body){
+    constructor(id, userId, title, body, userName){
         
         try {
             if(!id){
@@ -20,11 +20,16 @@ export class Post {
             this.id = id;
             this.userId = userId;
             this.title = title;
-            this.body = body;  
+            this.body = body; 
+            this.userName =""; 
 
         } catch (error) {
             console.log(error.message);
         }
+    }
+
+    setAuthorName(authorId) {
+        this.userName = authorId;
     }
 }
 
