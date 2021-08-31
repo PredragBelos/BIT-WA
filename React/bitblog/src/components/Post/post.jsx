@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './scss/post.css';
 
-export const Post = () => {
+export const Post = ({title, body}) => {
     return(
         <div className="post">
-            <Link>Title</Link>
-            <p>Text prvog posta</p>
+            <Link>{title}</Link>
+            <p>{body}</p>
         </div>
     )
 }
