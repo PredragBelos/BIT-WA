@@ -1,5 +1,5 @@
 import './App.css';
-import { Route} from 'react-router-dom';
+import { Redirect, Route} from 'react-router-dom';
 import { Home } from '../Home/home';
 import { About } from '../About/about';
 import { Authors } from '../Authors/authors';
@@ -16,7 +16,7 @@ function App() {
       <Route path="/posts/new" component={NewPost}/>
       <Route path="/post/:id" component={SinglePost}/>
       
-      {/* <Redirect from="/" to="/home"/> */}
+      <Redirect from="/" to="/home"/>
     
     </div>
   );
